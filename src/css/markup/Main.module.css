@@ -1,0 +1,19 @@
+.mainContent{
+    display: flex;
+}
+.sidebarsContainer{
+    display: flex;
+    /* flex-grow: 1; */
+    align-items: flex-start;
+}
+@media screen and (max-width: 1200px){
+    .sidebarsContainer{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+@media screen and (max-width: 800px){
+    .mainContent{
+        flex-direction: column;
+    }
+}

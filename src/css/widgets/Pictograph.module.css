@@ -1,0 +1,18 @@
+.pictograph{
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    flex-grow: 1;
+    border: 10px inset #ccc;
+    /* max-height: 100%; */
+    /* min-height: 50vh; */
+}
+.badge{
+    width: 2.2em;
+    height: 2.2em;
+    background: linear-gradient(rgb(100, 100, 100),rgb(73, 73, 73));
+    position: absolute;
+    top: -1em;
+    left: 1.5em;
+    border-radius: 5px;
+}

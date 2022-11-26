@@ -1,0 +1,10 @@
+.widget{
+    flex-grow: 1;
+    /* border: 1px solid black; */
+    background-color: black;
+    /* margin: .3em; */
+    /* max-height: 88px;
+    min-height: 88px; */
+    /* height: 88px; */
+    border: 1px solid red;
+}

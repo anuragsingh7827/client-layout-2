@@ -1,0 +1,74 @@
+{
+    "header": {
+        "header1": {
+            "cellId": "header1",
+            "height": "20vh",
+            "width": "100vw",
+            "widgetIds": []
+        }
+    },
+    "footer": {
+        "footer1": {
+            "cellId": "footer1",
+            "height": "20vh",
+            "width": "100vw",
+            "widgetIds": []
+        }
+    },
+    "leftSidebar": {
+        "leftSidebarColumn1": {
+            "cellId": "leftSidebarColumn1",
+            "height": "60vh",
+            "width": "25vw",
+            "widgetIds": []
+        }
+    },
+    "rightSidebar": {
+        "rightSidebarColumn1": {
+            "cellId": "rightSidebarColumn1",
+            "height": "60vh",
+            "width": "25vw",
+            "widgetIds": []
+        }
+    },
+    "innerHeader": {
+        "innerHeader1": {
+            "cellId": "innerHeader1",
+            "height": "15vh",
+            "width": "50vw",
+            "widgetIds": []
+        }
+    },
+    "innerFooter": {
+        "innerFooter1": {
+            "cellId": "innerFooter1",
+            "height": "15vh",
+            "width": "50vw",
+            "widgetIds": []
+        }
+    },
+    "innerLeftSidebar": {
+        "innerLeftSidebarColumn1": {
+            "cellId": "innerLeftSidebarColumn1",
+            "height": "30vh",
+            "width": "15vw",
+            "widgetIds": []
+        }
+    },
+    "innerRightSidebar": {
+        "innerRightSidebarColumn1": {
+            "cellId": "innerRightSidebarColumn1",
+            "height": "30vh",
+            "width": "15vw",
+            "widgetIds": []
+        }
+    },
+    "center": {
+        "centerColumn": {
+            "cellId": "centerColumn",
+            "height": "30vh",
+            "width": "20vw",
+            "widgetIds": [] 
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.sidebar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* min-height: 60vh; */
+    border: 1px solid #ccc;
+}
+.configBtn{
+    z-index: 900;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: .2em;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+}
+.configBtn:hover{
+    background: rgb(208, 208, 208);
+}
+.configBtnClicked{
+    background: rgb(178, 178, 178);
+}
+.configIcon{
+    width: 1.2em;
+}
+.configIconClicked{
+    transform: rotate(30deg);
+}
+

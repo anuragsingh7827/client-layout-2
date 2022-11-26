@@ -1,0 +1,34 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1000;
+}
+.popUp{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #FFFFFF;
+    padding: 1em;
+    z-index: 2000;
+    width: 30%;
+    border-radius: 10px;
+}
+.buttonGroup{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6em;
+}
+.addWidgetsBtn, .closePopUpBtn{
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(9, 91, 255);
+    color: #FFF;
+    padding: .5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}

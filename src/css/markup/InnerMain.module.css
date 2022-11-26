@@ -1,0 +1,19 @@
+.innerMain{
+    display: flex;
+}
+.innerSidebarsContainer{
+    display: flex;
+    /* flex-grow: 1; */
+    align-items: flex-start;
+}
+@media screen and (max-width: 1200px){
+    .innerSidebarsContainer{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+@media screen and (max-width: 900px){
+    .innerMain{
+        flex-direction: column;
+    }
+}
