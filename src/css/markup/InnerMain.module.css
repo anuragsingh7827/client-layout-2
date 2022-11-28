@@ -3,8 +3,6 @@
 }
 .innerSidebarsContainer{
     display: flex;
-    /* flex-grow: 1; */
-    align-items: flex-start;
 }
 @media screen and (max-width: 1200px){
     .innerSidebarsContainer{

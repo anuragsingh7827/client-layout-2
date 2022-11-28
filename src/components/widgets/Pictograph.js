@@ -11,6 +11,7 @@ import styled from 'styled-components';
 
 
 function Pictograph(props){
+    
     const Pictograph = styled.div`
         height: ${props.pictoHeight};
     `;
@@ -86,8 +87,8 @@ function Pictograph(props){
         <Draggable draggableId={draggableId} index={props.index}>
             {(provided) => (
                 <Pictograph className={styles.pictograph} {...provided.draggableProps} 
-                                                {...provided.dragHandleProps} 
-                                                ref={provided.innerRef}>
+                            {...provided.dragHandleProps} 
+                            ref={provided.innerRef}>
                     <div className={styles.badge}></div>
                     {chart}
                 </Pictograph>

@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { nanoid } from 'nanoid';
 import Counter from "../widgets/Counter";
 import Pictograph from "../widgets/Pictograph";
-import config from '../../imgs/config.png';
-import SearchPopUp from "./SearchPopUp";
 import styles from '../../css/markup/Footer.module.css';
 import { Droppable } from '@hello-pangea/dnd';
 import styled from 'styled-components';
+import ContainerLayout from "./ContainerLayout";
 
 function Footer(props){
     const FooterComponent = styled.footer`
@@ -30,19 +29,13 @@ function Footer(props){
         <Droppable droppableId={droppableId} direction="horizontal">
             {(provided) => (
                 <FooterComponent className={styles.footer} ref={provided.innerRef} {...provided.droppableProps}>
-                    <button onClick={() => setIsPopUpOpen(true)} 
-                            className={isPopUpOpen ? `${styles.configBtn} ${styles.configBtnClicked}` : styles.configBtn}>
-                            <img className={isPopUpOpen ? `${styles.configIcon} ${styles.configIconClicked}` : styles.configIcon} 
-                                src={config} 
-                                alt="configIcon"/>
-                    </button>
-                    <SearchPopUp masterContainer={props.masterContainerId}
-                                isPopUpOpen={isPopUpOpen} 
-                                cellId={props.cellId} 
-                                setCellsConfig={props.setCellsConfig} 
-                                setIsPopUpOpen={setIsPopUpOpen}
+                    <ContainerLayout isPopUpOpen={isPopUpOpen}
+                                    setIsPopUpOpen={setIsPopUpOpen}
+                                    masterContainerId={props.masterContainerId}
+                                    cellId={props.cellId}
+                                    setCellsConfig={props.setCellsConfig}
+                                    widgets={widgets}
                     />
-                    {widgets}
                     {provided.placeholder}
                 </FooterComponent>
             )}

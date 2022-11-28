@@ -25,6 +25,8 @@ const Doughnutchart = ({ data, labels /* see data tab */ }) => (
                 ]
             ]
         }}
+        arcLinkLabelsDiagonalLength={10}
+        arcLinkLabelsStraightLength={12}
         arcLinkLabelsSkipAngle={10}
         arcLinkLabelsTextColor="#333333"
         arcLinkLabelsThickness={2}

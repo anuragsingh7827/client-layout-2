@@ -50,14 +50,14 @@ function SearchPopUp(props){
             return prevAvailableOptions.filter(option => !removeOptions.has(option))
         });
         props.setCellsConfig(prevCellsConfig => {
-            const masterContainerInfo = prevCellsConfig[props.masterContainer];
+            const masterContainerInfo = prevCellsConfig[props.masterContainerId];
             const childContainerInfo = masterContainerInfo[props.cellId];
 
             const oldWidgetIds = childContainerInfo.widgetIds;
             const newWidgetIds = oldWidgetIds.concat(chosenOptions.map(option => option.value));
             return {
                 ...prevCellsConfig,
-                [props.masterContainer]:{
+                [props.masterContainerId]:{
                     ...masterContainerInfo,
                     [props.cellId]: {
                         ...childContainerInfo,
